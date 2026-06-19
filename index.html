@@ -438,7 +438,7 @@ section{position:relative}
 .form-embed{position:relative;width:100%;background:#FFFFFF;border-radius:24px;box-shadow:0 30px 80px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(223,234,117,0.10), 0 0 60px -10px rgba(223,234,117,0.18);overflow:hidden;height:100%;min-height:760px;display:flex;flex-direction:column}
 .form-embed .ribbon{position:absolute;top:14px;right:-38px;transform:rotate(45deg);background:var(--lime);color:var(--black);padding:5px 44px;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;z-index:2}
 .form-embed iframe{flex:1 1 auto;width:100%;min-height:760px;border:0;display:block}
-@media(max-width:979px){.form-embed{width:100%;max-width:480px;min-height:720px}.form-embed iframe{min-height:720px}}
+@media(max-width:979px){.form-embed{width:100%;max-width:480px;min-height:720px}.form-embed iframe{min-height:720px}.form-embed-hero{max-width:440px}}
 .cal-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding-bottom:22px;border-bottom:1px solid #EAEAEA;margin-bottom:22px}
 .cal-head .who{font-size:13px;color:#5a5a5a;font-weight:500}
 .cal-head .title{font-family:'Poppins',sans-serif;font-style:italic;font-weight:600;font-size:26px;letter-spacing:-0.02em;color:#0A0A0A;line-height:1.1}
@@ -970,62 +970,13 @@ html.reveal-on .reveal-t.in{opacity:1;transform:none}
     </div>
 
     <div class="hero-right">
-      <form class="hero-card" id="diag-form" onsubmit="alert('Recebemos seus dados! Nossa equipe entrará em contato em até 24h úteis.');return false;">
-        <span class="hc-eyebrow"><span class="dot" aria-hidden="true"></span>Diagnóstico gratuito · 30 min</span>
-        <input type="text" name="nome" placeholder="Qual é o seu nome e sobrenome?" required>
-        <input type="email" name="email" placeholder="Qual o seu e-mail corporativo?" required>
-        <input type="text" name="marca" placeholder="Qual o nome da sua loja ou marca?" required>
-        <div class="hc-phone">
-          <select class="hc-cc" name="ddi" aria-label="País (código DDI)">
-            <option value="+55" selected>BR +55</option>
-            <option value="+351">PT +351</option>
-            <option value="+1">US +1</option>
-            <option value="+1">CA +1</option>
-            <option value="+54">AR +54</option>
-            <option value="+56">CL +56</option>
-            <option value="+57">CO +57</option>
-            <option value="+52">MX +52</option>
-            <option value="+598">UY +598</option>
-            <option value="+595">PY +595</option>
-            <option value="+51">PE +51</option>
-            <option value="+591">BO +591</option>
-            <option value="+593">EC +593</option>
-            <option value="+58">VE +58</option>
-            <option value="+34">ES +34</option>
-            <option value="+44">GB +44</option>
-            <option value="+33">FR +33</option>
-            <option value="+49">DE +49</option>
-            <option value="+39">IT +39</option>
-            <option value="+31">NL +31</option>
-            <option value="+41">CH +41</option>
-            <option value="+244">AO +244</option>
-            <option value="+258">MZ +258</option>
-            <option value="+61">AU +61</option>
-            <option value="+81">JP +81</option>
-          </select>
-          <input type="tel" name="whatsapp" placeholder="Qual o seu WhatsApp?" required>
-        </div>
-        <select name="faturamento" required>
-          <option value="" disabled selected>Qual o faturamento mensal da sua empresa?</option>
-          <option>Até R$ 100 mil</option>
-          <option>R$ 100 mil a R$ 300 mil</option>
-          <option>R$ 300 mil a R$ 1 milhão</option>
-          <option>R$ 1 milhão a R$ 2 milhões</option>
-          <option>Acima de R$ 2 milhões</option>
-        </select>
-        <select name="investimento" required>
-          <option value="" disabled selected>Quanto investe por mês em mídia paga?</option>
-          <option>Até R$ 20 mil</option>
-          <option>R$ 20 mil a R$ 50 mil</option>
-          <option>R$ 50 mil a R$ 100 mil</option>
-          <option>R$ 100 mil a R$ 300 mil</option>
-          <option>Acima de R$ 300 mil</option>
-        </select>
-        <button type="submit" class="hc-submit">Quero meu diagnóstico gratuito
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </button>
-        <span class="hc-foot">Resposta em até 24h úteis · Sem compromisso</span>
-      </form>
+      <div class="form-embed form-embed-hero">
+        <iframe
+          src="https://forms.elevateecom.com.br/trafego-adscale"
+          title="Diagnóstico gratuito — formulário ADSCALE"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
 </header>
