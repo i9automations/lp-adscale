@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:mlo-growth.com)",
+      "Bash(curl -sL -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://mlo-growth.com/adquisicion/metodolgia-mlo-growth-3\" -o \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\original.html\")",
+      "Bash(grep -oE \">[A-Za-zÁÉÍÓÚÑáéíóúñ¿¡][^<>]{3,}<\" \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\original.html\")",
+      "Bash(curl -sL \"https://framerusercontent.com/sites/RibJDAYbtCz9LFalmg2Sy/searchIndex-vBNcCfapODD3.json\" -o \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\searchindex.json\")",
+      "Bash(python -c ' *)",
+      "Bash(py --version)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\")",
+      "Bash(cp \"/c/Users/User/Downloads/Logo-Adscale-Verde---01.png\" \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\\\\logo-verde.png\")",
+      "Bash(cp \"/c/Users/User/Downloads/Logo-Adscale-Verde---02.png\" \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\\\\logo-verde-mark.png\")",
+      "Bash(cp \"/c/Users/User/Downloads/Logo-Adscale-Branca---01.png\" \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\\\\logo-branca.png\")",
+      "Bash(cp \"/c/Users/User/Downloads/Logo-Adscale-Branca---02.png\" \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\\\\logo-branca-mark.png\")",
+      "Bash(start *)",
+      "PowerShell($json = Get-Content \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\searchindex.json\" -Raw | ConvertFrom-Json; $json | Get-Member; $json.Count)",
+      "Bash(mkdir -p \"/c/Users/User/Downloads/LP-ADSCALE/assets\")",
+      "Bash(cp \"/c/Users/User/Desktop/LP ADSCALE/index.html\" \"/c/Users/User/Downloads/LP-ADSCALE/index.html\")",
+      "Bash(cp \"/c/Users/User/Desktop/LP ADSCALE/historias-de-sucesso.html\" \"/c/Users/User/Downloads/LP-ADSCALE/historias-de-sucesso.html\")",
+      "Bash(cp -r \"/c/Users/User/Desktop/LP ADSCALE/assets/.\" \"/c/Users/User/Downloads/LP-ADSCALE/assets/\")",
+      "Bash(explorer C:\\\\Users\\\\User\\\\Downloads\\\\LP-ADSCALE *)",
+      "Bash(rm -f \"/c/Users/User/Downloads/LP-ADSCALE/historias-de-sucesso.html\")",
+      "Bash(cp \"/c/Users/User/Downloads/ChatGPT Image 25 de mai. de 2026, 10_20_29.png\" \"/c/Users/User/Desktop/LP ADSCALE/assets/cases/dashboard-01.png\")",
+      "Bash(cp \"/c/Users/User/Downloads/ChatGPT Image 25 de mai. de 2026, 10_21_37.png\" \"/c/Users/User/Desktop/LP ADSCALE/assets/cases/dashboard-02.png\")",
+      "Bash(cp \"/c/Users/User/Downloads/ChatGPT Image 25 de mai. de 2026, 10_23_45.png\" \"/c/Users/User/Desktop/LP ADSCALE/assets/cases/dashboard-03.png\")",
+      "Bash(cp \"/c/Users/User/Desktop/LP ADSCALE/assets/cases/\"*.png \"/c/Users/User/Downloads/LP-ADSCALE/assets/cases/\")",
+      "Read(//c/Users/User/.claude/projects/C--Users-User-Desktop-LP-ADSCALE/memory//**)",
+      "Read(//c/Users/User/.claude/projects/C--Users-User-Desktop-LP-ADSCALE/memory/**)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\index.html\"; \"aberto\")",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\User\\\\Desktop\\\\LP ADSCALE\\\\assets\\\\cases\\\\pdp-saint-germain.png\"\\); \"$\\($img.Width\\) x $\\($img.Height\\) | ratio = $\\([math]::Round\\($img.Width/$img.Height,3\\)\\)\"; $img.Dispose\\(\\))",
+      "PowerShell($py = \\(Get-Command python -ErrorAction SilentlyContinue\\).Source; if\\(-not $py\\){ $py = \\(Get-Command python3 -ErrorAction SilentlyContinue\\).Source }; if\\(-not $py\\){ $py = \\(Get-Command py -ErrorAction SilentlyContinue\\).Source }; \"PY=$py\")",
+      "PowerShell($r = vercel whoami 2>&1; \"$r\")",
+      "PowerShell(vercel deploy *)",
+      "PowerShell(Start-Process \"https://adscale-lp.vercel.app\"; \"aberto\")",
+      "PowerShell(vercel *)",
+      "PowerShell(explorer.exe \"/select,C:\\\\Users\\\\User\\\\Downloads\\\\adscaleecom-hostinger.zip\"; \"Pasta aberta com o ZIP selecionado.\")",
+      "Bash(vercel domains *)"
+    ]
+  }
+}
